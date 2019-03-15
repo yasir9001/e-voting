@@ -1,0 +1,14 @@
+.homewrap {
+    width:100%;
+}
+.card_wrap {
+    /* max-width: 50%; */
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items : center
+}
+.card_wrap > * {
+    width: 400px;
+    /* flex: .3  */
+}
