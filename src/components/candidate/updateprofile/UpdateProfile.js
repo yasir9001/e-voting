@@ -11,9 +11,19 @@ import {
     FormText, 
     Container 
 } from 'reactstrap';
+import Navbar from './../../navbar/Navbar'
 export class UpdateProfile extends Component {
   render() {
     return (
+      <>
+        <Navbar
+                    link1 = 'Home'
+                    link1Target = '/candidate/profile'
+                    link2 = 'Update Info'
+                    link2Target = '/candidate/updateprofile'
+                    logoutText = 'Logout'
+                    logout = {()=> alert('User logged Out')}
+                />
       <Container style={{margin:'50px  auto 0 auto'}}>
         <Form>
         <Row form>
@@ -72,6 +82,7 @@ export class UpdateProfile extends Component {
       </Form>
 
       </Container>
+      </>
     )
   }
 }

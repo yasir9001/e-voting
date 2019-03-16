@@ -11,10 +11,20 @@ import {
     Col,
     Container 
 } from 'reactstrap';
+import Navbar from './../../navbar/Navbar'
 
 export class CandidateProfile extends Component {
   render() {
     return (
+      <>
+        <Navbar
+                    link1 = 'Home'
+                    link1Target = '/candidate/profile'
+                    link2 = 'Update Info'
+                    link2Target = '/candidate/updateprofile'
+                    logoutText = 'Logout'
+                    logout = {()=> alert('User logged Out')}
+                />
         <div className='homewrap'>
           <div className='card_wrap'>
             <Card>
@@ -28,6 +38,7 @@ export class CandidateProfile extends Component {
             </Card>
         </div>
       </div>
+      </>
     )
   }
 }

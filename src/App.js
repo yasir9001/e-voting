@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom'
 import Login from './components/login/Login'
 import Signup from './components/signup/Signup';
 import CandidateHomeScreen from './components/candidate/homescreen/HomeScreen';
+import AdminHomeScreen from './components/administration/homescreen/HomeScreen';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           {/* <Route path='/signup' exact render = {(props) =><Signup {...props}/> } /> */}
          </>
         </BrowserRouter>
+        <AdminHomeScreen />
         <CandidateHomeScreen /> 
       </div>
     );
